@@ -45,7 +45,14 @@
   <body>
     <div id="root"></div>
     <!-- <script src="http://react.file.alimmdn.com/aes.js"></script> -->
-    <script type="application/javascript">
+    <script type="text/javascript">
+      document.write(
+        '<script type="text/javascript" src="' +
+          window.location.origin +
+          "/yunwei/base.js?v=" +
+          String(Math.random()).slice(2) +
+          '"><\/script>'
+      );
       // if ('serviceWorker' in navigator) {
       //   window.addEventListener('load', () => {
       //     navigator.serviceWorker.register('/service-worker.js').then(registration => {
@@ -57,6 +64,6 @@
       // }
     </script>
 
-    <script src="/umi.0b0ca18d.js"></script>
+    <script src="/umi.d99b2259.js"></script>
   </body>
 </html>
